@@ -22,6 +22,7 @@ public class LibraryService {
 
     public String newAddStudent(LibraryStudentPojo libraryStudentPojo) {
         LibraryStudentPojo output = studentRepository.save(libraryStudentPojo);
+        System.out.println("this is save");
         return "success";
     }
 
